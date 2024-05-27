@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de Tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+           /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: top center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            /*
+            no "background-size" pode ser colocar no "auto" para deicxar o sistema adptar a imagem
+            pode colocar o tamanho fixo em "px" ou "%"
+            pode colocar em "contain" para se adptar ao tamanho da tela sem cortar 
+            pode colocar o "cover" que vai fazer cortes mas vai preencher a tela inteira
+            */
+
+            /*Shorthand - background 
+            color > image > position > repeat > [size] > attachment
+
+            no manual o [size] diz que funciona junto no "shorthand" (mas não funciona)
+            tem colocar abaixo do "shorthand" 
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed; 
             background-size: cover;
         }
         
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
