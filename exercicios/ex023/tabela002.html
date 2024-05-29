@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th { 
+            /*
+            cabeçalho fixo, (um exmeplo) (DICA) (OBS: não esta funcionando em todos os navegadores)
+            */ 
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }
+
+        tbody > tr:nth-child(2n) { 
+            /*
+            Efeito Zebrado, aqui no caso (2n) significa de duas em duas linhas
+            tambem pode colocar em impar usando (odd) e par usando (even)
+            */
+            background-color: lightgray;
+
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 873 064</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quod ipsum, voluptatum aperiam facere eveniet tenetur illo esse vel nobis magni nemo debitis nisi autem veritatis doloribus quaerat. Dolores, optio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto maxime recusandae voluptates adipisci, ipsa dicta neque debitis fugit, porro accusamus ea reiciendis id odit, voluptate vero. Architecto temporibus quam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolore autem harum laborum voluptates expedita eius ullam qui, repellendus tempore praesentium distinctio culpa nihil alias id obcaecati blanditiis non a! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, aperiam sed esse, exercitationem similique est porro magni illum iure sequi eligendi delectus eius, voluptates itaque distinctio aspernatur dicta ullam perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, libero facere perferendis atque eum fugit officiis dolor, eligendi porro, modi magni iste architecto quae id dicta quisquam provident quidem! Similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla expedita asperiores consequuntur dignissimos ipsa sapiente, quaerat adipisci incidunt officiis facilis a accusantium minima numquam repellendus aperiam quae nam deleniti non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at debitis pariatur atque corrupti fuga cumque aut. Ratione, tempore eos! Soluta officia, reprehenderit temporibus repudiandae illum illo magni molestiae in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, natus laboriosam ipsam quasi enim quidem tempore. Ducimus quo beatae hic, dignissimos aperiam minus et possimus debitis asperiores maxime ut quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nihil ipsum inventore amet quae ut praesentium officia? Alias eum quo repellat ipsum blanditiis facere, optio nostrum accusamus facilis tenetur quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque earum molestiae dolorem harum error ducimus minus quam, dolores nihil repellat placeat quod ratione vitae ut fugiat, nostrum dolorum distinctio. Ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officiis in magni ex beatae iusto rem iure voluptatum error? Ducimus illo, dolore natus maxime ullam hic eos necessitatibus facere modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla maiores atque quis, ipsa veritatis quaerat ea soluta dolore autem nostrum ut amet, vel cumque illum est reiciendis expedita in consequatur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam enim dolore ab cum exercitationem possimus porro aperiam? Laboriosam reprehenderit vel sed obcaecati dolor distinctio provident odit accusamus praesentium asperiores! Necessitatibus?</p>
+</body>
+</html>
